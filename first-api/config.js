@@ -6,13 +6,15 @@ var enviroments = {};
 
 // Staging (default) enviroment
 enviroments.staging = {
-    'port' : 1337,
+    'httpPort' : 1336,
+    'httpsPort' : 1337,
     'envName' : 'staging'
 };
 
 // Production enviroment
 enviroments.production = {
-    'port' : 3000,
+    'httpPort' : 2999,
+    'httpsPort' : 3000,
     'envName' : 'production'
 };
 
