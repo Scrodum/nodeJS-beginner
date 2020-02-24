@@ -12,12 +12,12 @@ enviroments.staging = {
 
 // Production enviroment
 enviroments.production = {
-    'port' : 5000,
+    'port' : 3000,
     'envName' : 'production'
 };
 
 // Determines which enviroment was passed as a command-line argument
-var currentEnviroment = typeof(process.env.NODE_ENV) == 'string' ? process.env.NODE_ENV.toLowerCase : '';
+var currentEnviroment = typeof(process.env.NODE_ENV) == 'string' ? process.env.NODE_ENV.toLowerCase() : '';
 
 
 // Check that the current enviroment is one of the enviroments aboce, if not, default to staging
